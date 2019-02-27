@@ -19,14 +19,10 @@ class Triangle
     if (errorA || errorB || errorC)
       begin 
         raise TriangleError
-      rescue TriangleError => error
-        puts error.length_error
       end
       elsif (errorD)
         begin
           raise TriangleError
-        rescue TriangleError => error 
-          puts error.other_error
         end
           
       elsif (@a==@b && @c == @b && @c == @a)
