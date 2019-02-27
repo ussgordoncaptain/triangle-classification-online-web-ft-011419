@@ -25,7 +25,7 @@ class Triangle
       elsif (errorD)
         begin
           raise TriangleError
-          rescue TriangleError => error 
+        rescue TriangleError => error 
           puts error.other_error
         end
           
